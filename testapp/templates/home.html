@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome to my portal</h1>
+<form method="post">{%csrf_token%}
+  <label for="firstname">Firstname:</label><br>
+  <input type="text" id="firstname" name="firstname"><br>
+<!--  <label for="pwd">Password:</label><br>-->
+<!--  <input type="password" id="pwd" name="pwd">-->
+    <br><br>
+    <label for="lastname">lastname:</label><br>
+  <input type="text" id="lastname" name="lastname"><br>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+<h1>Your ful name is {{fname}}</h1>
+</body>
+</html>
